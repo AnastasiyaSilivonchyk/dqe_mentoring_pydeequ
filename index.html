@@ -1,0 +1,51 @@
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>check</th>
+      <th>check_level</th>
+      <th>check_status</th>
+      <th>constraint</th>
+      <th>constraint_status</th>
+      <th>constraint_message</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>Product Review Check</td>
+      <td>Warning</td>
+      <td>Warning</td>
+      <td>SizeConstraint(Size(None))</td>
+      <td>Success</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>Product Review Check</td>
+      <td>Warning</td>
+      <td>Warning</td>
+      <td>UniquenessConstraint(Uniqueness(List(ProductNumber),None))</td>
+      <td>Success</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>Product Review Check</td>
+      <td>Warning</td>
+      <td>Warning</td>
+      <td>ComplianceConstraint(Compliance(StandardCost is non-negative,COALESCE(CAST(StandardCost AS DECIMAL(20,10)), 0.0) &gt;= 0,None))</td>
+      <td>Success</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>Product Review Check</td>
+      <td>Warning</td>
+      <td>Warning</td>
+      <td>ComplianceConstraint(Compliance(Class contained in L,H,M,`Class` IS NULL OR `Class` IN ('L','H','M'),None))</td>
+      <td>Failure</td>
+      <td>Value: 0.5099206349206349 does not meet the constraint requirement!</td>
+    </tr>
+  </tbody>
+</table>
